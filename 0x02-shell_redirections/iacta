@@ -1,1 +1,7 @@
-In this lesson, we will explore a powerful\n feature used by command line programs called\n input/output redirection. As we have seen, many commands\n such as ls print their output on the display. This does not have to be the case, however. By\n using some special notations we can redirect the\* output of many commands to files, devices, and even to the input of other commands.
+In this lesson, we will explore a powerful\n fea
+ture used by command line programs called\n inpu
+t/output redirection. As we have seen, many commands
+such as ls print their output on the display. Thi
+does not have to be the case, however. By\n using some special notations we can redirect the\* out
+put of many commands to files, devices, and even
+to the input of other commands.
