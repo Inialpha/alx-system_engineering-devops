@@ -1,2 +1,2 @@
 #!/bin/bash
-export POWER="0", export DIVIDE="0" | echo $(($POWSER/$DIVIDE))
+export POWER="0" export DIVIDE="0" | echo $(($POWSER/$DIVIDE))
