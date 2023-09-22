@@ -1,7 +1,7 @@
 # creates a file /tmp/school
 
 
-file { 'tmp/school':
+file { '/tmp/school':
   ensure  => 'present',
   content => 'I love Puppet',
   owner   => 'www-data',
