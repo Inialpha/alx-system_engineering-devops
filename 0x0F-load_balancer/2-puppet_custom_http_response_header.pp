@@ -20,7 +20,7 @@ require => Exec['install_nginx'],
 
 
 file_line { 'add header':
-path  => '/etc/nginx/sites-enabled/default',
+path  => '/etc/nginx/nginx.conf',
 match => 'server_name _;$',
 line  => "\tserver_name _;\n\tadd_header X-Served-By ${hostname};",
 }
