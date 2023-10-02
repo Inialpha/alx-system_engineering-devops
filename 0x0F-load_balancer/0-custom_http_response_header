@@ -13,7 +13,7 @@ new_config="server_name _;\n\tadd_header X-Served-By $host;\n\trewrite ^\/redire
 
 sudo sed -i "s/server_name _;/$new_config/" /etc/nginx/sites-enabled/default
 
-new_congif="location = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
+new_config="location = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
 
 sudo sed -i "s/location = \/404.ml {/$new_config/" /etc/nginx/sites-enabled/default
 
