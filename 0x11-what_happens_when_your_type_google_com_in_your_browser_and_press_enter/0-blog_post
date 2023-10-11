@@ -1,0 +1,47 @@
+What happens when you type www.google.com and press enter in your browser.
+
+Introduction 
+When you type www.google.com in your browser and press enter, you are making a request whether you know it or not. The browser you are using, for example google chrome, internet explorer etc makes this request on your behalf to devices or computers around the world which are designed to provide functionalities for your browser to finally return a response to you in regards to your request.
+Please note that using www.google.com in this post is just for simplicity. It will interest you to know that what is explained here applies to every website on the internet.
+
+Definition of Keywords 
+
+1. Browser: Like I mentioned earlier you use a browser to browse the internet most times though there are other command line applications that also access the internet. The browser or web browser is a computer application that can make a request to other computers through the internet and can render the received response appropriately to the user.
+2. Internet: The internet is a global network of computers which are interconnected using globally accepted rules called internet protocols (IP). These connected computers provide information and communication facilities to all devices connected to this network.
+3. DNS:  The domain name system (DNS) is a system that mapps readable names to numeric IP addresses.
+4. Server: A server is a computer hardware or software (computer program that provides functionality to other computers or devices.
+5. Client: A client is the opposite of a server. It is a computer that receives services or functionality from another computer.
+6. Database: This is a computer program that stores information or data that can be accessed by other computers or computer programs.
+
+
+Let's start the drive:
+When you type www.google and press enter the first thing your browser does is to request the IP address of the domain from the DNS resolver also called DNS recursor.
+
+DNS:
+The DNS recursor  checks its cache for the IP address, if it does not have it, it queries the root nameserver which itself doesn't know the IP address of the domain but knows where to find it. So the root nameserver returns the address of the top level domain server which also does not know the IP address of the domain but knows the address of the authoritative nameserver that knows the domain IP address. So the top level domain nameserver returns the address of the authoritative nameserver to the DNS resolver (recursor). The DNS resolver now queries the authoritative nameserver for the domain's IP address which returns the address if it exists. The DNS resolver now returns the address to the browser.
+
+TCP/IP:
+Transmission control protocol and internet protocol is a suite of communication protocols that form the backbone of the internet and most local networks. Every device on the internet has a  unique IP address that is used to identify it. Your device uses these protocols to communicate with any other device on the internet. This set of protocols is what is already working for you to communicate with the domain name system to get the IP address, it is what is still going to work as long as you are on the internet.
+
+Http/https:
+Hypertext transfer protocol or hypertext transfer protocol secure is a set of protocols that is used by applications on the web. It is used to request and deliver text that contains links (hypertext). when the "s" is added to http it means the connection is secure and encrypted. This can be achieved using a secure socket layer (SSL). 
+
+SSL:
+Secure socket layer is a cryptographic protocol designed to provide secure connection over a computer network. If the server (website) you are visiting has an SSL certificate and is configured to serve a secured response, it is going to exchange an encryption key with your browser so that messages sent between the two can only be read by both. In this case even if another device intercepts your communication it can't read it because it will only look like gibberish without the key.
+
+Load balancer:
+A load balancer is a server that receives a request and forwards it to other web servers which will then respond to the request. If everyone using  google service sends a request to just one server there is going to be a delay and the server might fail. In this case a load balancer receives the request and distributes it among identical servers that can respond.
+
+Firewalls: when the request reaches the server or website it will be filtered using a set of rules like port number, http method, etc before it is allowed to pass to the server that will handle the request.
+
+Web server:
+A web server is a server that serves web pages. It will receive the request from the load balancer and check if it has the requested content. A web server can serve static web pages. Static web pages are already written pages like articles stored as text. It can also serve dynamic web pages which are web pages generated upon request or depending on the request requirements. To serve dynamic web pages, the web server needs an application server.
+
+Application server:
+The application server contains codes, logics and programs that can generate responses to satisfy the request made. Most times, the application server depends on a database server for data to generate this response.
+
+Database:
+The database server stores data and provides them when requested for.
+
+The database server provides the data to the application server which then generates the appropriate response for the web server. The web server now returns the response to your browser. Your browser then renders it accordingly to you.
+
