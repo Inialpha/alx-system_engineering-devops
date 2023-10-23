@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Python script that print information about an employee"""
-import sys
 import requests
+import sys
 
 if __name__ == '__main__':
     user_id = sys.argv[1]
