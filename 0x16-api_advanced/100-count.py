@@ -1,14 +1,17 @@
 #!/usr/bin/python3
+"""count words"""
 from requests import get
 
 
 def count_words(subreddit, word_list):
+    """count words"""
     count = {}
     retrieve_word_counts(subreddit, word_list, count)
     print(count)
 
 
 def retrieve_word_counts(subreddit, word_list, count={}, after=None):
+    """count words"""
     head = {'User-Agent': 'Mozilla/5.0'}
     param = {'limit': 100, 'after': after} if after else {'limit': 100}
     url = f'https://www.reddit.com/r/{subreddit}/hot.json'
@@ -33,8 +36,4 @@ def retrieve_word_counts(subreddit, word_list, count={}, after=None):
                         count[word.lower()] = count.get(word.lower(), 0) + 1
 
     except Exception as e:
-        print(f"An error occurred: {e}")
         return
-
-
-count_words('programming', ['java', 'python'])
