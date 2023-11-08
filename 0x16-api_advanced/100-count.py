@@ -8,7 +8,7 @@ def count_words(subreddit, word_list):
     count = {}
     retrieve_word_counts(subreddit, word_list, count)
     for key, value in count.items():
-        print("{}: {}".format(key, value)
+        print("{}: {}".format(key, value))
 
 
 def retrieve_word_counts(subreddit, word_list, count={}, after=None):
