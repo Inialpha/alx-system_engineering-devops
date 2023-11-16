@@ -6,5 +6,5 @@ command => "/bin/sed -i 's/holberton soft nofile 5/holberton soft nofile 5000/' 
 }
 
 exec {' increase hard':
-command => "/bin/sed -i 's/holberton hard nofile 4/holberton hard nofile 5000/' /etc/security/limits.conf",
+command => "/bin/sed -i 's/holberton hard nofile 4/holberton hard nofile 4000/' /etc/security/limits.conf",
 }
